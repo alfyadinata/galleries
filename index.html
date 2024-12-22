@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="featured-section">
+            <h2>Featured Images</h2>
+            <div class="carousel-container">
+                <div class="carousel-track"></div>
+                <button class="carousel-btn prev-btn" data-tooltip="Previous image">&lt;</button>
+                <button class="carousel-btn next-btn" data-tooltip="Next image">&gt;</button>
+            </div>
+        </section>
+        <div class="tooltip"></div>
+
+        <section class="gallery-section">
+            <div>
+                <h1>Image Gallery</h1>
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="searchInput" placeholder="Search images..." data-tooltip="Type to search images">
+                        <button id="resetSearch" class="reset-search" style="display: none;" data-tooltip="Clear search">×</button>
+                    </div>
+                    <div id="autocomplete-results" class="autocomplete-results"></div>
+                </div>
+            </div>
+            <div class="gallery-grid" data-tooltip="Click any image for details"></div>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="images.json"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
