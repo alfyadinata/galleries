@@ -1,5 +1,7 @@
 # Interactive Image Gallery
 
+🌐 **Live Demo**: [https://galleries-delta.vercel.app/](https://galleries-delta.vercel.app/)
+
 A modern, responsive image gallery built with vanilla JavaScript, featuring an interactive UI with search, autocomplete, tooltips, and a carousel.
 
 ## Features
